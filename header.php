@@ -1,4 +1,6 @@
-<header>
+
+<header class="bg-light">
+<div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Cursos</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -42,4 +44,6 @@
                 <?php endforeach; ?>
             </ul>
         </nav>
+        </div>
     </header>
+

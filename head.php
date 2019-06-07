@@ -9,7 +9,7 @@ $produtos = json_decode($jsonProdutos,true);
 
 $produtos = $produtos["Produtos"];
 
-addProduto("Curso Mobile Android", "Curso para criar um app",2300,"img/produto2.jpg");
+
 $categorias = ["Cursos", "Tutoriais", "Artigos", "Forum", "Códigos"];
 ?>
 <head>
