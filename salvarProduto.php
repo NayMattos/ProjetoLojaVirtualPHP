@@ -15,16 +15,16 @@ exit;
 
 }
 $imgAceitas= ["image/png","image/jpg","image/jpeg"];
-$errorEnvio = $_FILES['arquivo']["error"];
+$errorEnvio = $_FILES['arquivo']['error'];
 
 
-$nomeProduto = $_POST["nomeProduto"];
-$precoProduto = $_POST ["precoProduto"];
-$descProduto = $_POST ["descProduto"];
-$nomeArquivo = $_FILES ["arquivo"]["name"];
-$arquivoTmp = $_FILES ["arquivo"]["tmp_name"];
+$nomeProduto = $_POST['nomeProduto'];
+$precoProduto = $_POST ['precoProduto'];
+$descProduto = $_POST ['descProduto'];
+$nomeArquivo = $_FILES ['arquivo']['name'];
+$arquivoTmp = $_FILES ['arquivo']['tmp_name'];
 $caminhoImg = "img/$nomeArquivo";
-$typeFile = $_FILES["arquivo"]["type"];
+$typeFile = $_FILES['arquivo']['type'];
 if($errorEnvio !== 0){
     echo  '<h1> Houve um erro no envio do arquivo verifique e tente novamente </h1>';
     echo  '<a class="btn btn-primary" href="CadastroProduto.php">Voltar para a pagina de cadastro </a>';
